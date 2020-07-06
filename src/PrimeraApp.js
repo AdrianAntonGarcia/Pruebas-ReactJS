@@ -7,7 +7,7 @@ const PrimeraApp = ({ saludo: saludoProp, subitulo }) => {
 	// console.log(saludoProp);
 	return (
 		<Fragment>
-			<h1>{saludoProp}</h1>
+			<h1>{saludoProp}!!!</h1>
 
 			{/* Para imprimir objetos 
 			<pre>{JSON.stringify(saludo, null, 3)}</pre> */}
@@ -25,8 +25,9 @@ PrimeraApp.propTypes = {
  * Si los ponemos aquí si nos aparecerá el componente en la pestaña de herramientas del
  * desarrollador del navegador web.
  */
+
 PrimeraApp.defaultProps = {
-	subitulo: 'Soy un subtitulo'
-}
+	subitulo: "Soy un subtitulo",
+};
 
 export default PrimeraApp;

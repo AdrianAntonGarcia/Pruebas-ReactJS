@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import PropTypes from "prop-types";
 
-const CounterApp = ({ value }) => {
+const CounterApp = ({ value = 10 }) => {
 	const [counter, setCounter] = useState(value);
 
 	// handleAdd
@@ -48,7 +48,7 @@ CounterApp.propTypes = {
 	value: PropTypes.number,
 };
 
-CounterApp.defaultProps = {
-	value: 0,
-};
+// CounterApp.defaultProps = {
+// 	value: 10,
+// };
 export default CounterApp;
